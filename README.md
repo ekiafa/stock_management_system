@@ -5,10 +5,10 @@ Simple engine of stocks management written in Python and Django framework.
 
 <h3>Execution</h3>
 
-> cd stock_management_system
-> source bin/activate
-> python manage.py runserver
-> https://localhost:8000/
+> cd stock_management_system /n
+> source bin/activate /n
+> python manage.py runserver /n
+> https://localhost:8000/ /n
 
 <li>Python</li>
 3.6.0
