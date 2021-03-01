@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .forms import StockCreateForms
+from .forms import StockCreateForm
 # Register your models here.
 
 from .models import Stock
