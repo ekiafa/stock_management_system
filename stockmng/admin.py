@@ -6,7 +6,7 @@ from .models import Stock
 
 
 class StockCreateAdmin(admin.ModelAdmin):
-    list_display=['category','item_name','quantity']
+    list_display=['symbol','name','sector']
     form=StockCreateForm
 
 admin.site.register(Stock,StockCreateAdmin)
