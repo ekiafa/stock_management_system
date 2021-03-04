@@ -1,7 +1,7 @@
 # stock_management_system
 
 
-Simple engine for stocks management written in Python and Django framework.
+Simple engine for stock management written in Python and Django framework.
 
 <h3>Execution</h3>
 
