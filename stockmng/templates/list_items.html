@@ -8,8 +8,11 @@
 </head>
 <body>
      {% for instance in queryset %}
-     {{instance.item_name}},{{instance.quantity}}
+     {{instance.symbol}},{{instance.name}},{{instance.sector}},{{instance.price}},{{instance.price_earnings}},{{instance.dividend_yield}},{{instance.earnings_share}},
+     {{instance.fifty_two_week_low}},{{instance.fifty_two_week_high}},{{instance.market_cap}},{{instance.ebitda}},{{instance.price_sales}},{{instance.price_book}}
+     {{instance.sec_fillings}}
      {%endfor%}
 </body>
 </body>
 </html>
+

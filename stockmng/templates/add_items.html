@@ -21,14 +21,24 @@
   <a href="#about">About</a>
 </div>
 
-<div style="padding-left:16px">
-     <p></p>
-     <form method='POST' action="">{%csrf_token%}
-       {{form}}
-       <input type="submit" value="Save"/>
-     </form>
+<div class="jumbotron">
+    <div class="container">
+         <div style="padding-left:450px">
+             <h1>Insert stock detais in fields:</h1>
+             <form method='POST' action="">
+               
+               <table>
+                 {%csrf_token%}
+                 {{ form.as_table }}
+               </table>
+               <input type="submit" value="Save"/>
+             </form>
+        </div>
+     </div>
 </div>
 
 </body>
 </html>
+
+
 
