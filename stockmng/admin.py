@@ -3,10 +3,14 @@ from .forms import StockCreateForm
 # Register your models here.
 
 from .models import Stock
+from import_export.admin import ImportExportModelAdmin
 
 
-class StockCreateAdmin(admin.ModelAdmin):
+
+class StockCreateAdmin(ImportExportModelAdmin):
     list_display=['symbol','name','sector']
-    form=StockCreateForm
+    form=StockCreateForm    
+    pass
+
 
 admin.site.register(Stock,StockCreateAdmin)
