@@ -8,7 +8,7 @@ class StockCreateForm(forms.ModelForm):
        fields=['symbol','name','sector','price','price_earnings']
 
 
-class StockCreateForm(forms.ModelForm):
+class StockSearchForm(forms.ModelForm):
    class Meta:
        model=Stock
        fields=["name","sector"]
