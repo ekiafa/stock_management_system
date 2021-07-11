@@ -24,8 +24,7 @@ def list_items(request):
      if request.method=="POST":
         queryset=Stock.objects.filter(name_icontains=form['name'].value(),
                                     sector_icontains=form['sector'].value())
-            context={"form":form,"header"=header,"queryset"=queryset,
-     }
+        context={"form":form,"header":header,"queryset":queryset}
 
      return render(request,'list_items.html',context)
 
